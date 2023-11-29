@@ -60,7 +60,8 @@ button {
     border-color: #646cff;
   }
 
-  &:focus, &:focus-visible {
+  &:focus,
+  &:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
   }
 
