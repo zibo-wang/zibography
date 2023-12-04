@@ -72,6 +72,12 @@ body {
     color: $color-link;
     margin-left: auto;
   }
+
+  &__footer {
+    margin-left: auto; // Aligns footer to the right
+    padding: 0.5rem; // Adds padding to the footer
+    align-self: flex-end; // Aligns footer to the bottom
+  }
 }
 
 .menu {
@@ -172,6 +178,12 @@ body {
     &__button {
       grid-area: button;
       justify-self: end;
+    }
+
+    &__footer {
+      margin-left: auto; // Aligns footer to the right
+      padding: 0.5rem; // Adds padding to the footer
+      align-self: flex-end; // Aligns footer to the bottom
     }
   }
 
