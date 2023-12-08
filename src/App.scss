@@ -5,6 +5,11 @@ $color-link-hover: #000;
 $color-menu: #000;
 $color-menu-hover: #c0092b;
 
+@font-face {
+  font-family: 'Albori Regular';
+  src: url(./assets/Albori-Regular.woff) format('woff');
+}
+
 *,
 *::after,
 *::before {
@@ -26,7 +31,7 @@ body {
   background-color: $color-bg;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: freight-big-pro, "Minion Pro", serif;
+  font-family: "Albori Regular", sans-serif;
   font-weight: 300;
 
   a {
@@ -52,6 +57,7 @@ body {
   font-style: italic;
   background: #f0f0f0;
   width: 100%;
+  height: 100%;
   display: flex;
 
   &__title {
@@ -161,7 +167,7 @@ body {
     display: grid;
     grid-template-areas: 'title button'
       'links ...';
-    padding: 3rem 4rem;
+    padding: 3rem 1rem 1rem 4rem;
     pointer-events: none;
 
     &__links {
